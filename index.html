@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menu -->
+  <nav class="menu">
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">O que são games</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Início -->
+  <header id="inicio" class="fade-in">
+    <h1>Bem-vindo ao <span>Games World</span></h1>
+    <p>Explore o universo dos games com estilo e imersão!</p>
+  </header>
+
+  <!-- Sobre -->
+  <section id="sobre" class="fade-in">
+    <h2>O que são games?</h2>
+    <p>Games são experiências digitais interativas que unem diversão, estratégia, narrativa e desafios. 
+    Eles podem ser de ação, aventura, esportes, RPG e muito mais, conectando pessoas e criando mundos únicos.</p>
+  </section>
+
+  <!-- Galeria -->
+  <section id="galeria" class="fade-in">
+    <h2>Galeria de Jogos</h2>
+    <div class="galeria">
+      <div class="card">
+        <img src="img/Valorant.jpg" alt="Valorant">
+        <h3>Valorant</h3>
+        <p>FPS tático da Riot Games que combina trabalho em equipe e personagens com habilidades únicas.</p>
+      </div>
+      <div class="card">
+        <img src="img/Eldenring.jpg" alt="Elden Ring">
+        <h3>Elden Ring</h3>
+        <p>RPG de ação em mundo aberto criado pela FromSoftware, com narrativa de George R. R. Martin.</p>
+      </div>
+      <div class="card">
+        <img src="img/fortinit.jpg" alt="Fortnite">
+        <h3>Fortnite</h3>
+        <p>Battle Royale da Epic Games famoso por sua jogabilidade criativa, eventos ao vivo e cultura pop.</p>
+      </div>
+      <div class="card">
+        <img src="img/rocket league.jpg" alt="Rocket League">
+        <h3>Rocket League</h3>
+        <p>Um jogo único que mistura futebol e carros acrobáticos, popular nos eSports.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="fade-in">
+    <h2>Entre em contato</h2>
+    <form>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Digite seu email" required>
+      
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Desenvolvido por Gabriel Henrique</p>
+  </footer>
+
+  <!-- Botão de acessibilidade -->
+  <div id="acessibilidade-btn">♿</div>
+
+  <!-- Painel de acessibilidade -->
+  <div id="painel-acessibilidade" class="hidden">
+    <h3>Acessibilidade</h3>
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+    <button onclick="diminuirFonte()">Diminuir Fonte</button>
+    <button onclick="toggleContraste()">Contraste</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
